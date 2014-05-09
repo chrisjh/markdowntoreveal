@@ -1,0 +1,11 @@
+{
+  "name": "MarkdownToReveal",
+  "description": "An app for converting markdown documents to Reveal.js compatible HTML files",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "*",
+    "reveal": "*",
+    "mime": "*"
+  }
+}
