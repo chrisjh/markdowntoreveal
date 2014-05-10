@@ -6,6 +6,7 @@
   "dependencies": {
     "express": "*",
     "reveal": "*",
-    "mime": "*"
+    "mime": "*",
+    "minimist": "*"
   }
 }
