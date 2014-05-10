@@ -5,6 +5,9 @@
 
 var fs = require('fs'); //File system
 var http = require('http'); //Processing HTTP requests
+//Tiny webserver based on kentbrew's gist:
+//https://gist.github.com/kentbrew/764238
+
 var mime = require('mime');
 var path = require('path');
 var url = require('url');
