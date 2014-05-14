@@ -1,7 +1,7 @@
 MarkdownToReveal.js
 ========
 
-A node.js app written by James Martin for practice with node.js, JavaScript, and just 'cause.
+An all-in-one application for converting Markdown files to beautiful Reveal.js presentations. Batteries included, some assembly required.
 
 To use:
 
@@ -9,6 +9,9 @@ To use:
 - Clone the repository  
 - Run `npm install`
 - Run `node app` to start the webserver on localhost:8000
-- Visit localhost:8000 to view the example file.
+- Run `node mtr path/to/your/file.md`
+- Visit localhost:8000/file.html to see the Reveal presentation.
+
+Don't like the theme/slide/transitions/whatever? Just edit the HTML file to suit your needs or to add Reveal functionality.
 
 Read more about Reveal.js [here](https://github.com/hakimel/reveal.js)

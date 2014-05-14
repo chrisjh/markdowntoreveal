@@ -39,14 +39,19 @@ wstream.on('finish', function() {
 	console.log('File written.');
 })
 
-wstream.write('<!DOCTYPE html>\n<html lang="en">\n\n<head>\n<meta charset="utf-8">\n<title>MarkdownToReveal');
+//Start head
+wstream.write('<!DOCTYPE html>\n<html lang="en">\n\n<head>\n<meta charset="utf-8">\n<title>MarkdownToReveal</title>');
 wstream.write('<meta name="description" content="Generated reveal.js friendly HTML from Markdown.">\n<meta name="author" content="James Martin">\n');
 wstream.write('<meta name="apple-mobile-web-app-capable" content="yes" />\n<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />\n');
 wstream.write('<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">\n');
 wstream.write('<link rel="stylesheet" href="node_modules/reveal/index.css">\n<link rel="stylesheet" href="node_modules/reveal/theme/default.css" id="theme">\n');
-wstream.write('<script>if( window.location.search.match( /print-pdf/gi ) ) {var link = document.createElement( \'link\' );link.rel = \'stylesheet\';link.type = \'text/css\';link.href = \'css/print/pdf.css\';document.getElementsByTagName( \'head\' )[0].appendChild( link );}</script>');//Could be an error
+wstream.write('<script>if( window.location.search.match( /print-pdf/gi ) ) {var link = document.createElement( \'link\' );link.rel = \'stylesheet\';link.type = \'text/css\';link.href = \'css/print/pdf.css\';document.getElementsByTagName( \'head\' )[0].appendChild( link );}</script>\n</head>');//Could be an error
+//End head
+//Start body
+wstream.write('<body>\n<div class="reveal"> <section data-markdown="chris-test.md" data-separator="^\\n\\n\\n" data-vertical="^\\n\\n" data-notes="^Note:"</section>\n</div>\n');
+wstream.write('<script src="node_modules/reveal/index.js"></script>')
+wstream.write('\n<script>Reveal.initialize({\ncontrols:true,\nprogress:true,\nhistory:true,\ncenter:true,\ntheme:Reveal.getQueryHash().theme,\ntransition:Reveal.getQueryHash().transition||\'default\'});</script>\n</body>\n</html>');
 
-
-
+//End test
 
 
