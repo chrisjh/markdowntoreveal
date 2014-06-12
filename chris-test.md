@@ -1,23 +1,3 @@
-# Timing Website README
-
-## Getting Started
-
-The VNXe/vVNX/2+2 Timing Website is located at vnxetiming.drm.lab.emc.com or 10.103.79.207
-
-To log into the server, use `ssh root@vnxetiming.drm.lab.emc.com` with password c4dev!
-
-The source code for the project is located in `/portal`
-
-To run the server in production, `cd /portal`, then run: 
-
-```
-$ PORT=80 nohup node server.js &
-```
-
-This sets the PORT environment variable to 80, uses nohup to keep the process running, node server to start the server, and & to background the process. 
-
-NOTE: When you are finished, be sure to `exit` the ssh session, otherwise when the connection is lost, the server will terminate ungracefully.
-
 ## MEAN Stack
 
 MEAN is a boilerplate that provides a nice starting point for [MongoDB](http://www.mongodb.org/), [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), and [AngularJS](http://angularjs.org/) based applications. It is designed to give you quick and organized way to start developing of MEAN based web apps with useful modules like mongoose and passport pre-bundled and configured. We mainly try to take care of the connection points between existing popular frameworks and solve common integration problems.  
